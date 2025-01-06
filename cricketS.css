@@ -1,67 +1,65 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
     text-align: center;
+    background-color: #f0f8ff;
   }
-  
+
   h1 {
-    color: #333;
+    color: #ff6347;
+    text-shadow: 2px 2px #ffa07a;
   }
-  
+
   #loadingMessage {
     font-size: 18px;
-    color: #555;
+    color: #4682b4;
+    text-shadow: 1px 1px #b0c4de;
   }
-  
-  /* Container for Matches */
+
   #scoresContainer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 20px; /* Space between cards */
-    justify-content: center; /* Center align the grid */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
     padding: 20px;
   }
-  
-  /* Individual Match Card */
+
   .match {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    padding: 20px;
+    border: 1px solid #ffa500;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #ffefd5, #ffdab9);
     text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
   }
-  
-  /* Hover Effect */
+
   .match:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
   }
-  
-  /* Match Card Text */
+
   .match p {
-    margin: 5px 0;
+    margin: 10px 0;
+    color: #2e8b57;
+    text-shadow: 1px 1px #98fb98;
   }
-  
-  /* Responsive Design */
+
   @media (max-width: 1024px) {
     #scoresContainer {
-      grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+      grid-template-columns: repeat(3, 1fr);
     }
   }
-  
+
   @media (max-width: 768px) {
     #scoresContainer {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+      grid-template-columns: repeat(2, 1fr);
     }
   }
-  
+
   @media (max-width: 480px) {
     #scoresContainer {
-      grid-template-columns: 1fr; /* 1 column for extra small screens */
+      grid-template-columns: 1fr;
     }
   }
-  
